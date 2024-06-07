@@ -19,12 +19,5 @@ def on_button_click():
 button = tk.Button(root, text="Cerrar", command=on_button_click)
 button.pack(pady=10)
 
-# Función para salir del modo de pantalla completa
-def exit_fullscreen(event):
-    root.attributes('-fullscreen', False)
-
-# Asignar la tecla "Esc" para salir del modo de pantalla completa
-root.bind("<Escape>", exit_fullscreen)
-
 # Ejecutar el bucle principal
 root.mainloop()
